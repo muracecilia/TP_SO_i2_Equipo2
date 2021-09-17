@@ -1,31 +1,63 @@
 
-4-Responder dentro del archivo ìrespuesta_I2_EquipoX.txtî
-Apellido y nombre de los alumnos que participaron de la interacciÛn
+4-Responder dentro del archivo ‚Äúrespuesta_I2_EquipoX.txt‚Äù
+Apellido y nombre de los alumnos que participaron de la interacci√≥n
 
-Quiroga Paula - Villarreal MarÌa Gabriela - Mura Cecilia.
+Quiroga Paula - Villarreal Mar√≠a Gabriela - Mura Cecilia.
 
 Finalmente entre todos los integrantes contestan esta preguntas con sus palabras :
 
-a-øComo actualizo mi repositorio, al estado que estÈ el repo que hice FORK?
+a-¬øComo actualizo mi repositorio, al estado que est√© el repo que hice FORK?
+FORK - COPIA DEL REPOSITORIO HASTA EL MOMENTO QUE SE REALIZA
 
+ACTUALIZAR REPOSITORIO
 
-b-øPuede ALFA actualizar su FORK al estado del fork de GAMMA?
+1 - HACER CLONE DEL REPOSITORIO (CODE GITHUB- COPIO)
 
+git clone code
 
-c-øPuede GAMMA actualizar su FORK al estado del fork de ALFA?
+2 - HAGO REFERNCIA AL REPOSITORIO ORIGINAL
+
+git remote add upstream https..... (repositorio original)
+
+3 - OBTENER LOS DATOS DEL REPOSITORIO ORIGINAL
+
+git fetch upstream
+
+4 - CONFIRMAR QUE ESTOY EN LA RAMA MASTER / SINO...
+
+git checkout master
+
+5 - PARA VER COMMIT DE MI REPOSITORIO 
+
+git log
+
+TODAVIA HASTA ACA SOLO CAMBIOS EN LOCAL NO MUESTRA NADA EN GITHUB
+
+6 - PARA ACTUALIZAR MI FORK FUERZO... (SOLO AFECTA MI FORK NO DA√ëA EL REPOSITORIO ORIGINAL)
+
+git push -f origin master (actualizo mi fork)
+
+7 - SI QUIERO VERIFICAR POR CONSOLA VUELVO A HACER
+
+git log
+
+b-¬øPuede ALFA actualizar su FORK al estado del fork de GAMMA?
+yo diria que no salvo que vuelva al FORKORIGINAL
+
+c-¬øPuede GAMMA actualizar su FORK al estado del fork de ALFA?
 
 Gama no puede actualizar su fork, ya que Beta es la rama principal..
 
-d-øLos datos que tenia en mi repositorio , editados por mi, se pierden si quiero actualizar
+d-¬øLos datos que tenia en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
 
 Los datos de mi repositorios no sufre cambios.
 
 e- realizar un listado con los apellidos y nombre de los alumnos , junto con los comando y
-orden de ejecuciÛn de los mismos, que debieron usar para este TP
+orden de ejecuci√≥n de los mismos, que debieron usar para este TP
 
 7-GAMMA sube las respuestas a- y b
 6-BETA sube la c- y d
 7-ALFA sube la e
 
-todas en el mismo archivo ìrespuesta_I2_EquipoX.txtî
+todas en el mismo archivo ‚Äúrespuesta_I2_EquipoX.txt‚Äù
